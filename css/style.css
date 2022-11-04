@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+#mainHeader{
+    background-color:coral;
+}
+
+
+.header__nav ul{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    margin-right: 200px;
+    margin-left: 200px; 
+}
+
+main{
+    text-align: center;
+    display: flex;
+}
+
+.main__wrapper{
+    background-color: brown;
+    width: 40%;
+    height: 500px;
+}
+
+main h1{
+    font-size: 3.8rem;
+    padding-top: 150px;
+}
+
+main h2{
+    font-size: 2.5rem;
+}
+
+main button{
+    margin-top: 20px;
+    padding: 8px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 2px;
+}
+
+.main__imagen{
+    background-color: rgb(110, 29, 29);
+    width: 60%;
+}
+
+/* CARDS */
+
+#main__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:darksalmon;
+}
+
+.main__cards__sobremi,
+.main__cards__misobras,
+.main__cards__tecnicas,
+.main__cards__contactame{
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    background-color: azure;
+    text-align: center;
+}
+
+.main__cards__sobremi,
+.main__cards__misobras,
+.main__cards__tecnicas,
+.main__cards__contactame h3{
+    padding-top: 20px;
+}
+
+

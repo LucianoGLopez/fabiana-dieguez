@@ -1,84 +1,265 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+main {
+  text-align: center; }
 
-ul li{
-    list-style: none;
-}
+.main__wrapper {
+  display: flex;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
-#mainHeader{
-    background-color:coral;
-}
-
-
-.header__nav ul{
-    display: flex;
-    padding: 30px;
-    justify-content: space-around;
-    margin-right: 200px;
-    margin-left: 200px; 
-}
-
-main{
-    text-align: center;
-    display: flex;
-}
-
-.main__wrapper{
-    background-color: brown;
-    width: 40%;
-    height: 500px;
-}
-
-main h1{
+.main__tittle {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 40%;
+  text-align: center; }
+  .main__tittle h1 {
     font-size: 3.8rem;
-    padding-top: 150px;
-}
-
-main h2{
+    padding-top: 320px;
+    font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ebbe84;
+    font-weight: 900; }
+  .main__tittle h2 {
     font-size: 2.5rem;
-}
-
-main button{
-    margin-top: 20px;
-    padding: 8px;
-    background-color: chocolate;
-    border: none;
-    border-radius: 2px;
-}
-
-.main__imagen{
-    background-color: rgb(110, 29, 29);
-    width: 60%;
-}
+    font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ebbe84; }
 
 /* CARDS */
-
-#main__cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:darksalmon;
-}
+#main__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #672d22; }
 
 .main__cards__sobremi,
 .main__cards__misobras,
 .main__cards__tecnicas,
-.main__cards__contactame{
-    height: 300px;
-    width: 250px;
-    margin: 20px;
-    background-color: azure;
-    text-align: center;
-}
+.main__cards__contactame {
+  height: 400px;
+  width: 320px;
+  margin: 20px;
+  background-color: azure;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76); }
 
 .main__cards__sobremi,
 .main__cards__misobras,
-.main__cards__tecnicas,
-.main__cards__contactame h3{
-    padding-top: 20px;
-}
+.main__cards__tecnicas {
+  color: azure;
+  font-family: "Philosopher"; }
+  .main__cards__sobremi h2,
+  .main__cards__misobras h2,
+  .main__cards__tecnicas h2 {
+    padding-top: 20px; }
 
+.main__cards__sobremi {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/fabiana.JPG);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
+.main__cards__misobras {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/IMG_1970.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 100px; }
+
+.main__cards__tecnicas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/tecnicas.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul li {
+  list-style: none; }
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Taviraj";
+  src: url("../fonts/Taviraj-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900; }
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+/* HEADER MOBILE Y TABLET */
+#main__header {
+  width: 100vw;
+  background-color: #070612; }
+  #main__header ul ul {
+    display: none; }
+  #main__header li {
+    margin: 5px;
+    text-align: center; }
+
+#navbar-toggler {
+  background-color: #c1902d;
+  margin-right: 20px; }
+
+/* FIN HEADER MOBILE Y TABLET*/
+@media (min-width: 992px) {
+  /* HEADER */
+  #main__header {
+    background: #6e2216d5;
+    position: fixed;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px auto;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    color: #fff7e8; }
+    #main__header a {
+      color: #eadbdb; }
+      #main__header a:hover {
+        color: #ebbe84; }
+    #main__header ul ul {
+      display: none;
+      position: absolute;
+      background-color: #6e2216;
+      border-style: solid;
+      border-color: #ebbe84;
+      border-width: 1px;
+      border-top: none;
+      border-left: none;
+      right: 15px;
+      left: 15px;
+      text-align: start; }
+      #main__header ul ul li {
+        display: block;
+        text-align: start;
+        padding: none; }
+      #main__header ul ul a:after,
+      #main__header ul ul a::before {
+        border: none; }
+    #main__header__nav {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 100vw;
+      height: 8vh;
+      padding-right: 300px;
+      padding-left: 150px;
+      transition: all .3s ease;
+      align-items: center; }
+      #main__header__nav li {
+        display: inline-block;
+        list-style: outside none none; }
+      #main__header__nav ul li a {
+        padding: 5px;
+        right: 15px;
+        top: 15px; }
+      #main__header__nav a {
+        position: relative;
+        text-decoration: none;
+        font-weight: 400; }
+      #main__header__nav a::before, #main__header__nav a::after {
+        content: '';
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0; }
+      #main__header__nav a::before {
+        content: '';
+        right: -10px;
+        top: -10px;
+        border-top: 1px solid #ebbe84;
+        border-right: 1px solid #ebbe84;
+        transform: translate(-100%, 50%); }
+      #main__header__nav a::after {
+        content: '';
+        left: -10px;
+        bottom: -10px;
+        border-bottom: 1px solid #ebbe84;
+        border-left: 1px solid #ebbe84;
+        transform: translate(100%, -50%);
+        z-index: 1; }
+      #main__header__nav a:hover:before,
+      #main__header__nav a:hover:after {
+        transform: translate(0, 0);
+        opacity: 1; }
+  .header__img {
+    color: #ebbe84;
+    padding-left: 70px; }
+    .header__img :hover {
+      transform: scale(1.1);
+      transition: 0.1s; }
+  #main__header ul li {
+    display: block;
+    position: relative; }
+  #main__header ul li:hover ul {
+    display: block; } }
+
+footer {
+  background-color: #6e2216;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px; }
+
+.footer__logo {
+  color: #ebbe84;
+  align-self: center; }
+
+.footer__nav {
+  align-self: center; }
+  .footer__nav a {
+    align-content: center;
+    padding-left: 20px;
+    color: #eadbdb;
+    text-decoration: none; }
+    .footer__nav a:hover {
+      color: #ebbe84; }
+
+.footer__redes {
+  align-self: center;
+  color: #ebbe84;
+  font-size: 14px; }
+  .footer__redes img {
+    margin: 10px;
+    filter: invert(85%) sepia(88%) saturate(4441%) hue-rotate(303deg) brightness(107%) contrast(84%); }

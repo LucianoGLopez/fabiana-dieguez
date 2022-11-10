@@ -1,0 +1,35 @@
+footer{
+    background-color: $primary;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.footer__logo{
+    color: #ebbe84;
+    align-self: center;
+}
+
+.footer__nav{
+    align-self: center;
+    a{
+        align-content: center;
+        padding-left: 20px;
+        color: $light;
+        text-decoration: none;
+        &:hover{
+            color: #ebbe84;
+        }
+    }
+}
+
+.footer__redes{
+    align-self: center;
+    color: #ebbe84;
+    font-size: 14px;
+    img{
+        margin: 10px;
+        filter: invert(85%) sepia(88%) saturate(4441%) hue-rotate(303deg) brightness(107%) contrast(84%);
+    }
+}
+

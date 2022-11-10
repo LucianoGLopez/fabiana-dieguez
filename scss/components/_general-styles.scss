@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Philosopher" ;
+    src: url("../fonts/Philosopher-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Philosopher" ;
+    src: url("../fonts/Philosopher-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700; 
+}
+
+@font-face {
+    font-family: "Taviraj" ;
+    src: url("../fonts/Taviraj-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Taviraj" ;
+    src: url("../fonts/Taviraj-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300; 
+}
+
+@font-face {
+    font-family: "Taviraj" ;
+    src: url("../fonts/Taviraj-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight:900; 
+}
+
+@font-face {
+    font-family: "Mulish" ;
+    src: url("../fonts/Mulish-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300; 
+}
+
+@font-face {
+    font-family: "Mulish" ;
+    src: url("../fonts/Mulish-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Mulish" ;
+    src: url("../fonts/Mulish-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700; 
+}

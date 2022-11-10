@@ -1,0 +1,7 @@
+@mixin carousel-areas-desktop ($background) {
+    background-image: $background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 220px;
+}

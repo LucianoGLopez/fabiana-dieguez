@@ -1,0 +1,131 @@
+/* HEADER MOBILE Y TABLET */
+#main__header {
+    width: 100vw;
+    background-color: #070612;
+    ul ul{
+        display: none;
+    }
+    li{
+        margin: 5px;
+        text-align: center;
+    }
+}
+#navbar-toggler{
+    background-color: #c1902d;
+    margin-right: 20px;
+}
+/* FIN HEADER MOBILE Y TABLET*/
+// INICIA HEADER DESKTOP
+@media  (min-width: 992px) {
+    /* HEADER */
+    #main__header {
+        background: #6e2216d5;
+        position: fixed;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 200px auto;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        color: #fff7e8;
+            a{
+                color: $light;
+                &:hover{
+                    color: #ebbe84;
+                }
+            }
+            ul ul{
+                display: none;
+                position: absolute;
+                background-color: $primary;
+                border-style: solid;
+                border-color:#ebbe84;
+                border-width: 1px;
+                border-top: none;
+                border-left: none;
+                right: 15px;
+                left: 15px;
+                text-align: start;
+            li{
+                display:block;
+                text-align: start;
+                padding: none;
+                
+            }
+            a:after,
+            a::before{
+                border: none;
+            }
+            }
+                &__nav{
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    width: 100vw;
+                    height: 8vh;
+                    padding-right: 300px;
+                    padding-left: 150px;
+                    transition: all .3s ease;
+                    align-items: center;
+                        li{
+                            display: inline-block;
+                            list-style: outside none none;
+                        }
+                        ul li a{
+                            padding: 5px;
+                            right: 15px;
+                            top: 15px;
+                        }
+                        a{
+                            position: relative;
+                            text-decoration: none;
+                            font-weight: 400;
+                        }
+                        a::before, a::after{
+                            content: '';
+                            height: 15px;
+                            width: 15px;
+                            position: absolute;
+                            transition: all .35s ease;
+                            opacity: 0;
+                        }
+                        a::before{
+                            content: '';
+                            right: -10px;
+                            top: -10px;
+                            border-top: 1px solid #ebbe84;
+                            border-right: 1px solid #ebbe84;
+                            transform: translate(-100%, 50%);
+                        }
+                        a::after{
+                            content: '';
+                            left: -10px;
+                            bottom: -10px;
+                            border-bottom: 1px solid #ebbe84;
+                            border-left: 1px solid #ebbe84;
+                            transform: translate(100%, -50%);
+                            z-index: 1;
+                        }
+                        a:hover:before,
+                        a:hover:after{
+                            transform: translate(0,0);
+                            opacity: 1;
+                        }
+                }
+    }
+    .header__img{
+        color: #ebbe84;
+        padding-left: 70px;
+        :hover{
+            transform: scale(1.1);
+            transition: 0.1s;  
+        }
+    }
+    #main__header ul li{
+        display: block;
+        position: relative;
+    }
+    #main__header ul li:hover ul{
+        display: block;
+    }
+}
+// FIN HEADER DESKTOP

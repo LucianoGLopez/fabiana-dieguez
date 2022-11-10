@@ -23,6 +23,17 @@ main {
     font-size: 2.5rem;
     font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #ebbe84; }
+  .main__tittle button {
+    background-color: #6e2216;
+    color: #ebbe84;
+    padding: 5px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; }
+    .main__tittle button:hover {
+      background-color: #ebbe84;
+      color: #6e2216;
+      transition: .3s; }
 
 /* CARDS */
 #main__cards {
@@ -37,7 +48,7 @@ main {
 .main__cards__contactame {
   height: 400px;
   width: 320px;
-  margin: 20px;
+  margin: 40px;
   background-color: azure;
   text-align: center;
   border-radius: 8px;

@@ -1,7 +1,3 @@
-main{
-    text-align: center;
-}
-
 .main__wrapper{
     display: flex;
     height: 100vh;
@@ -10,8 +6,7 @@ main{
     background-size: cover;
     background-position: center;
 }
-
-.main__tittle{
+.main__title{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     width: 40%;
     text-align: center;
@@ -19,79 +14,45 @@ main{
         font-size: 3.8rem;
         padding-top: 320px;
         font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(235, 190, 132);
+        color: $text;
         font-weight: 900;
     }
     h2{
         font-size: 2.5rem;
         font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(235, 190, 132);
+        color: $text;
+        padding: 0 0 5px 0;
     }
     button{
         background-color: $primary;
-        color: #ebbe84;
+        color: $text;
         padding: 5px 15px;
         font-size: 18px;
         border: none;
         border-radius: 5px;
         &:hover{
-            background-color: #ebbe84;
+            background-color: $text;
             color: $primary;
             transition: .3s;
         }
     }
 }
-
 /* CARDS */
-
 #main__cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: $brown;
-}
-
-.main__cards__sobremi,
-.main__cards__misobras,
-.main__cards__tecnicas,
-.main__cards__contactame{
-    height: 400px;
-    width: 320px;
-    margin: 40px;
-    background-color: azure;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
-    -webkit-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
-    -moz-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
-}
-
-.main__cards__sobremi,
-.main__cards__misobras,
-.main__cards__tecnicas{
-    color: azure;
-    font-family: "Philosopher";
-    h2{
-        padding-top: 20px;
+    a{
+        text-decoration: none;
     }
 }
-
 .main__cards__sobremi{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/fabiana.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include main-cards-desktop (url(../img/obras/img1.jpg));
 }
-
 .main__cards__misobras{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/IMG_1970.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    right: 100px;
+    @include main-cards-desktop (url(../img/IMG_1970.jpg));
 }
-
 .main__cards__tecnicas{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/tecnicas.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include main-cards-desktop (url(../img/tecnicas.JPG));
 }

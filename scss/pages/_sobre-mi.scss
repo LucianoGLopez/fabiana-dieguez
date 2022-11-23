@@ -1,0 +1,67 @@
+#sobre-mi__main{
+    height: 100%;
+    background-image: linear-gradient(rgba(53, 16, 9, 0.9), rgba(69, 23, 13, 0.8)), url(/img/beige-paintbrush-stroke-textured-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    h1{
+        color: $text;
+        padding-top: 120px;
+        text-align: center;
+        font-weight: 900;
+    }
+    h2{
+        color: $text;
+        padding-top: 30px;
+        text-align:center;
+    }
+}
+
+.sobre__mi{
+    display: flex;
+    margin: 30px 200px 100px 200px;
+    background-color: $text;
+    padding: 25px 20px 10px 25px;
+    border-radius: 8px;
+    p{
+        color: $brown2;
+        padding-left: 60px;
+        align-self: center;
+    }
+    img{
+        width: 380px;
+        height: 280px;
+        box-shadow: 1px 1px 20px black;
+    }
+}
+
+.sobre__mi__trayectoria{
+    display: flex;
+    margin: 30px 200px;
+    p{
+        color: $light;
+        padding-left: 60px;
+    }
+    img{
+        width: 380px;
+        height: 280px;
+        border-radius: 10px 10px 10px 1000px;
+        box-shadow: 1px 1px 20px black;
+    }
+}
+
+.sobre__mi__exposiciones{
+    display: flex;
+    margin: 30px 200px 0 200px;
+    p{
+        color: $light;
+        padding-left: 60px;
+    }
+    img{
+        width: 380px;
+        height: 280px;
+        border-radius: 10px 10px 1000px 10px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 20px black;
+    }
+}

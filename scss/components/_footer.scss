@@ -1,15 +1,13 @@
 footer{
-    background-color: $primary;
+    background-color: $brown2;
     display: flex;
     justify-content: space-around;
     padding: 5px;
 }
-
 .footer__logo{
-    color: #ebbe84;
+    color: $text;
     align-self: center;
 }
-
 .footer__nav{
     align-self: center;
     a{
@@ -18,14 +16,13 @@ footer{
         color: $light;
         text-decoration: none;
         &:hover{
-            color: #ebbe84;
+            color: $text;
         }
     }
 }
-
 .footer__redes{
     align-self: center;
-    color: #ebbe84;
+    color: $text;
     font-size: 14px;
     img{
         margin: 10px;

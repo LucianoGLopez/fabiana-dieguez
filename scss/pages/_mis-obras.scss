@@ -1,0 +1,26 @@
+#mis-obras__main{
+    height: 100vh;
+    background-color: $brown;
+    height: 100%;
+    h1{
+        padding-top: 120px;
+        text-align: center;
+        color: $text;
+        font-weight: 900;
+    }
+}
+
+.obras__row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    img{
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+    }
+}
+
+.obras__column{
+    flex: 5%;
+}

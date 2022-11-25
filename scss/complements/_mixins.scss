@@ -1,5 +1,5 @@
 @mixin main-cards-desktop ($background) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), $background;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), $background;
     height: 400px;
     width: 320px;
     margin: 40px;
@@ -13,7 +13,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     h2{
-        padding-top: 320px;
+        transform: translatey(320px);
+        background-color: #ebbe84c0;
+        margin-right: 160px;
+        border-top-right-radius: 20px;
+        color: $brown2;
+        text-align: start;
+        padding-left: 20px;
     }
     &:hover{
         transform: scale(1.1);

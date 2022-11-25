@@ -1,13 +1,35 @@
 #mis-obras__main{
     height: 100vh;
-    background-color: $brown;
+    background-color: $text;
     height: 100%;
     h1{
         padding-top: 120px;
         text-align: center;
-        color: $text;
+        color: $brown2;
         font-weight: 900;
     }
+    h2{
+        text-align: center;
+        color: $brown2;
+        font-weight: 900;
+        
+        padding-top: 30px;
+    }
+    p{
+        padding-left: 100px;
+        padding-right: 100px;
+        color: $brown2;
+    }
+}
+
+.separador{
+    border: .3px solid $brown;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: $brown;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-content: center;
 }
 
 .obras__row{
@@ -23,4 +45,48 @@
 
 .obras__column{
     flex: 5%;
+}
+
+.light__box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+    &:target{
+        transform: scale(1);
+    }
+    img{
+        max-height: 90vh;
+    }
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background-color: $text;
+    color: $brown;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: 700;
+    &:hover{
+        color: $brown;
+    }
+}
+
+.next{
+    display: block;
 }

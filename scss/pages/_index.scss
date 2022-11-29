@@ -56,3 +56,45 @@
 .main__cards__tecnicas{
     @include main-cards-desktop (url(../img/tecnicas.JPG));
 }
+
+// INICIA SLIDER
+.slider{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: $text;
+    padding-bottom: 30px;
+    
+}
+.slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px *20);
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+.slide{
+    width: 200px;
+    img{
+        width: 200px;
+        height: 250px;
+        padding: 5px;
+        border-radius: 8px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px *10));
+        -webkit-transform: translateX(-200px *10);
+    }
+}

@@ -1,0 +1,67 @@
+#contacto{
+    height: 100vh;
+    background-color: $text;
+    padding-top: 120px;
+    background-image: url(/img/background-contacto.png);
+    background-size: cover;
+    h1{
+        text-align: center;
+        color: $brown2;
+        font-weight: 900;
+        padding-bottom: 15px;
+    }
+}
+
+.contacto__form{
+    background-color: $brown;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 3.5em 1.5em;
+    margin: auto;
+    img{
+        margin: auto;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form__input{
+    background-color: $brown;
+    color: $text;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border:none;
+    border-bottom: solid 1.5px $text;
+    &::placeholder{
+        color: $text;
+    }
+}
+
+
+.form__input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+    font-family: inherit;
+}
+
+.form__cta{
+    background-color: $text;
+    color: $brown;
+    border: none;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    &:hover{
+        background-color: #d3a971;
+    }
+}

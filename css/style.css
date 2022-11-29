@@ -179,6 +179,40 @@ h1, h2, h3 {
     transform: scale(1.1);
     transition: 0.3s; }
 
+.slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  background-color: #ebbe84;
+  padding-bottom: 30px; }
+
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px *20); }
+  .slide-track:hover {
+    animation-play-state: paused; }
+
+.slide {
+  width: 200px; }
+  .slide img {
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 8px; }
+    .slide img:hover {
+      transform: scale(1.1); }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-200px *10));
+    -webkit-transform: translateX(-2000px); } }
+
 #sobre-mi__main {
   height: 100%;
   background-image: linear-gradient(rgba(53, 16, 9, 0.9), rgba(69, 23, 13, 0.8)), url(/img/beige-paintbrush-stroke-textured-background.jpg);
@@ -221,6 +255,11 @@ h1, h2, h3 {
     height: 280px;
     border-radius: 10px 10px 10px 1000px;
     box-shadow: 1px 1px 20px black; }
+  .sobre__mi__trayectoria__title img {
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+    box-shadow: none; }
 
 .sobre__mi__exposiciones {
   display: flex;
@@ -234,6 +273,12 @@ h1, h2, h3 {
     border-radius: 10px 10px 1000px 10px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 20px black; }
+  .sobre__mi__exposiciones__title img {
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: auto; }
 
 #mis-obras__main {
   height: 100vh;
@@ -310,31 +355,31 @@ h1, h2, h3 {
   .close:hover {
     color: #672d22; }
 
-.next {
-  display: block; }
-
 #tecnicas {
   height: 100%;
-  background-color: #672d22;
+  background-color: #ebbe84;
   display: flex;
   flex-direction: column;
   gap: 20px; }
   #tecnicas h1 {
     padding-top: 120px;
     text-align: center;
-    color: #ebbe84;
+    color: #52261d;
     font-weight: 900; }
 
 .tecnica__1 {
   height: 300px;
   width: 80%;
   align-self: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/obras/img43.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/obras/img43.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76); }
   .tecnica__1 h2 {
     padding-top: 80px;
     color: #ebbe84;
@@ -355,12 +400,15 @@ h1, h2, h3 {
   height: 300px;
   width: 80%;
   align-self: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/obras/img23.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/obras/img23.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76); }
   .tecnica__2 h2 {
     padding-top: 80px;
     color: #ebbe84;
@@ -381,12 +429,16 @@ h1, h2, h3 {
   height: 300px;
   width: 80%;
   align-self: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/obras/img25.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/obras/img25.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+  margin-bottom: 50px; }
   .tecnica__3 h2 {
     padding-top: 80px;
     color: #ebbe84;
@@ -402,6 +454,63 @@ h1, h2, h3 {
       background-color: #ebbe84;
       color: #6e2216;
       transition: .3s; }
+
+#contacto {
+  height: 100vh;
+  background-color: #ebbe84;
+  padding-top: 120px;
+  background-image: url(/img/background-contacto.png);
+  background-size: cover; }
+  #contacto h1 {
+    text-align: center;
+    color: #52261d;
+    font-weight: 900;
+    padding-bottom: 15px; }
+
+.contacto__form {
+  background-color: #672d22;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 3.5em 1.5em;
+  margin: auto; }
+  .contacto__form img {
+    margin: auto;
+    height: 60px;
+    width: 60px; }
+
+.form__container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%; }
+
+.form__input {
+  background-color: #672d22;
+  color: #ebbe84;
+  font-size: 1rem;
+  padding: .8em 1em;
+  outline: none;
+  border: none;
+  border-bottom: solid 1.5px #ebbe84; }
+  .form__input::placeholder {
+    color: #ebbe84; }
+
+.form__input--message {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: .5em;
+  font-family: inherit; }
+
+.form__cta {
+  background-color: #ebbe84;
+  color: #672d22;
+  border: none;
+  padding: .7em 0;
+  border-radius: .2em;
+  cursor: pointer; }
+  .form__cta:hover {
+    background-color: #d3a971; }
 
 /* HEADER MOBILE Y TABLET */
 #main__header {
@@ -421,7 +530,7 @@ h1, h2, h3 {
 @media (min-width: 992px) {
   /* HEADER */
   #main__header {
-    background: #52261d97;
+    background: #52261dc9;
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100vw;

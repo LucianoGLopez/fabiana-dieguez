@@ -57,6 +57,18 @@ h1, h2, h3 {
   font-style: normal;
   font-weight: 700; }
 
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald-Light.ttf);
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 700; }
+
 .main__wrapper {
   display: flex;
   height: 100vh;
@@ -72,9 +84,10 @@ h1, h2, h3 {
   .main__title h1 {
     font-size: 3.8rem;
     padding-top: 320px;
-    font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Philosopher", Times, 'Times New Roman', serif;
     color: #ebbe84;
-    font-weight: 900; }
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #672d22; }
   .main__title h2 {
     font-size: 2.5rem;
     font-family: "Philosopher", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -185,7 +198,7 @@ h1, h2, h3 {
   margin: auto;
   overflow: hidden;
   background-color: #ebbe84;
-  padding-bottom: 30px; }
+  padding: 30px 0; }
 
 .slide-track {
   display: flex;
@@ -213,72 +226,76 @@ h1, h2, h3 {
     transform: translateX(calc(-200px *10));
     -webkit-transform: translateX(-2000px); } }
 
-#sobre-mi__main {
-  height: 100%;
-  background-image: linear-gradient(rgba(53, 16, 9, 0.9), rgba(69, 23, 13, 0.8)), url(/img/beige-paintbrush-stroke-textured-background.jpg);
-  background-repeat: no-repeat;
+.sobre__mi__wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/wrapper.webp);
+  height: 38vh;
   background-size: cover;
-  position: relative; }
-  #sobre-mi__main h1 {
-    color: #ebbe84;
-    padding-top: 120px;
+  background-repeat: no-repeat;
+  background-position-y: center; }
+  .sobre__mi__wrapper h1 {
+    padding-top: 160px;
     text-align: center;
-    font-weight: 900; }
-  #sobre-mi__main h2 {
     color: #ebbe84;
-    padding-top: 30px;
-    text-align: center; }
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    align-self: flex-end; }
 
 .sobre__mi {
   display: flex;
-  margin: 30px 200px 100px 200px;
-  background-color: #ebbe84;
-  padding: 25px 20px 10px 25px;
-  border-radius: 8px; }
+  justify-content: space-around;
+  height: 100%;
+  background-color: #ebbe84; }
+  .sobre__mi h2 {
+    color: #52261d;
+    text-align: center;
+    padding-top: 80px; }
   .sobre__mi p {
     color: #52261d;
-    padding-left: 60px;
-    align-self: center; }
+    text-align: start;
+    padding: 5px 220px; }
   .sobre__mi img {
-    width: 380px;
-    height: 280px;
-    box-shadow: 1px 1px 20px black; }
+    margin: 30px 220px 30px 0;
+    box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76); }
 
 .sobre__mi__trayectoria {
   display: flex;
-  margin: 30px 200px; }
+  background-color: #672d22; }
+  .sobre__mi__trayectoria h2 {
+    color: #ebbe84;
+    text-align: center;
+    padding-top: 70px;
+    padding-right: 220px; }
   .sobre__mi__trayectoria p {
-    color: #eadbdb;
-    padding-left: 60px; }
+    color: #ebbe84;
+    text-align: start;
+    padding: 5px 220px 30px 0px; }
   .sobre__mi__trayectoria img {
-    width: 380px;
-    height: 280px;
-    border-radius: 10px 10px 10px 1000px;
-    box-shadow: 1px 1px 20px black; }
-  .sobre__mi__trayectoria__title img {
-    width: 35px;
-    height: 35px;
-    border-radius: 0;
-    box-shadow: none; }
+    margin: 30px 220px;
+    box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76); }
 
 .sobre__mi__exposiciones {
   display: flex;
-  margin: 30px 200px 0 200px; }
+  justify-content: space-around;
+  height: 100%;
+  background-color: #ebbe84; }
+  .sobre__mi__exposiciones h2 {
+    color: #52261d;
+    text-align: center;
+    padding-top: 70px; }
   .sobre__mi__exposiciones p {
-    color: #eadbdb;
-    padding-left: 60px; }
+    color: #52261d;
+    text-align: start;
+    padding: 5px 220px; }
   .sobre__mi__exposiciones img {
-    width: 380px;
-    height: 280px;
-    border-radius: 10px 10px 1000px 10px;
-    margin-bottom: 30px;
-    box-shadow: 1px 1px 20px black; }
-  .sobre__mi__exposiciones__title img {
-    width: 35px;
-    height: 35px;
-    border-radius: 0;
-    box-shadow: none;
-    margin: auto; }
+    margin: 30px 220px 30px 0;
+    box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 8px 7px 14px -6px rgba(0, 0, 0, 0.76); }
 
 #mis-obras__main {
   height: 100vh;
@@ -459,7 +476,7 @@ h1, h2, h3 {
   height: 100vh;
   background-color: #ebbe84;
   padding-top: 120px;
-  background-image: url(/img/background-contacto.png);
+  background-image: url(../img/background-contacto.png);
   background-size: cover; }
   #contacto h1 {
     text-align: center;

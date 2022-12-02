@@ -1,84 +1,84 @@
-#sobre-mi__main{
-    height: 100%;
-    background-image: linear-gradient(rgba(53, 16, 9, 0.9), rgba(69, 23, 13, 0.8)), url(/img/beige-paintbrush-stroke-textured-background.jpg);
-    background-repeat: no-repeat;
+.sobre__mi__wrapper{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/wrapper.webp);
+    height: 38vh;
     background-size: cover;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position-y: center;
     h1{
-        color: $text;
-        padding-top: 120px;
+        padding-top: 160px;
         text-align: center;
-        font-weight: 900;
-    }
-    h2{
         color: $text;
-        padding-top: 30px;
-        text-align:center;
+        font-weight: 900;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        align-self: flex-end;
     }
 }
 
 .sobre__mi{
     display: flex;
-    margin: 30px 200px 100px 200px;
+    justify-content: space-around;
+    height: 100%;
     background-color: $text;
-    padding: 25px 20px 10px 25px;
-    border-radius: 8px;
+    h2{
+        color: $brown2;
+        text-align: center;
+        padding-top: 80px;
+    }
     p{
         color: $brown2;
-        padding-left: 60px;
-        align-self: center;
+        text-align: start;
+        padding: 5px 220px;
     }
     img{
-        width: 380px;
-        height: 280px;
-        box-shadow: 1px 1px 20px black;
+        margin: 30px 220px 30px 0;
+        box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
+        -moz-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
     }
 }
 
 .sobre__mi__trayectoria{
     display: flex;
-    margin: 30px 200px;
+    background-color: $brown;
+    h2{
+        color: $text;
+        text-align: center;
+        padding-top: 70px;
+        padding-right: 220px;
+    }
     p{
-        color: $light;
-        padding-left: 60px;
+        color: $text;
+        text-align: start;
+        padding: 5px 220px 30px 0px;
     }
     img{
-        width: 380px;
-        height: 280px;
-        border-radius: 10px 10px 10px 1000px;
-        box-shadow: 1px 1px 20px black;
-    }
-    &__title{
-        img{
-            width: 35px;
-            height: 35px;
-            border-radius: 0;
-            box-shadow: none;
-        }
+        margin: 30px 220px;
+        box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
+        -moz-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
     }
 }
 
 .sobre__mi__exposiciones{
     display: flex;
-    margin: 30px 200px 0 200px;
+    justify-content: space-around;
+    height: 100%;
+    background-color: $text;
+    h2{
+        color: $brown2;
+        text-align: center;
+        padding-top: 70px;
+    }
     p{
-        color: $light;
-        padding-left: 60px;
+        color: $brown2;
+        text-align: start;
+        padding: 5px 220px;
     }
     img{
-        width: 380px;
-        height: 280px;
-        border-radius: 10px 10px 1000px 10px;
-        margin-bottom: 30px;
-        box-shadow: 1px 1px 20px black;
-    }
-    &__title{
-        img{
-            width: 35px;
-            height: 35px;
-            border-radius: 0;
-            box-shadow: none;
-            margin: auto;
-        }
+        margin: 30px 220px 30px 0;
+        box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
+        -moz-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
     }
 }

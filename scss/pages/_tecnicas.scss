@@ -1,25 +1,116 @@
-#tecnicas{
-    height: 100%;
-    background-color: $text;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.tecnicas__wrapper{
+    height: 45vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/wrapper-tecnicas.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
     h1{
-        padding-top: 120px;
+        padding-top: 160px;
         text-align: center;
-        color: $brown2;
+        color: $text;
         font-weight: 900;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        align-self: flex-end;
     }
-    
 }
 
+.tecnicas__cards{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    background-color: $brown;
+    padding: 50px 0;
+}
+
+.tecnica1__1{
+    display: flex;
+    background-color: $text;
+    padding: 50px;
+    h2{
+        padding-top: 50px;
+        padding-right: 120px;
+        text-align: center;
+        color: $brown;
+    }
+    p{
+        text-align: start;
+        color: $brown;
+        padding: 0 120px 50px 0;
+    }
+    img{
+        margin: 20px 0;
+        margin-left: 120px;
+    }
+    &__image1{
+        position: relative;
+        right: 180px;
+        top: 40px;
+    }
+}
+
+.tecnica2__2{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: $brown;
+    padding: 50px;
+    h2{
+        padding-top: 50px;
+        padding-left: 120px;
+        text-align: center;
+        color: $text;
+    }
+    p{
+        text-align: start;
+        color: $text;
+        padding: 0 0px 50px 120px;
+    }
+    img{
+        margin: 20px 0;
+        margin-right: 120px;
+    }
+    &__image1{
+        position: relative;
+        top: 50px;
+    }
+    &__image2{
+        position: relative;
+        left: 150px;
+        bottom: 40px;
+    }
+}
+
+.tecnica3__3{
+    display: flex;
+    background-color: $text;
+    padding: 50px;
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        color: $brown;
+    }
+    p{
+        text-align: start;
+        color: $brown;
+        padding: 0 120px 50px 0;
+    }
+    img{
+        margin-left: 120px;
+    }
+    &__image2{
+        position: relative;
+        right: 180px;
+        top: 30px;
+    }
+}
+
+
 .tecnica__1{
-    @include tecnicas-desktop (url(/img/obras/img43.JPG));
+    @include tecnicas-desktop (url(../img/obras/img43.JPG));
 }
 .tecnica__2{
     @include tecnicas-desktop (url(/img/obras/img23.jpg));
 }
 .tecnica__3{
     @include tecnicas-desktop (url(/img/obras/img25.jpg));
-    margin-bottom: 50px;
 }

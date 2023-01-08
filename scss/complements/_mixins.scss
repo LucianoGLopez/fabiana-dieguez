@@ -28,8 +28,8 @@
 }
 
 @mixin tecnicas-desktop ($background) {
-    height: 300px;
-    width: 80%;
+    height: 350px;
+    width: 350px;
     align-self: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), $background;
     background-repeat: no-repeat;
@@ -41,20 +41,23 @@
     -webkit-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
     -moz-box-shadow: 8px 7px 14px -6px rgba(0,0,0,0.76);
     h2{
-        padding-top: 80px;
-        color: $text;
+        color: $brown;
         font-weight: 900;
+        background-color: #ebbe84c6;
+        margin-top: 250px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     button{
-        background-color: $primary;
-        color: $text;
+        background-color: $text;
+        color: $brown;
         padding: 3px 12px;
-        font-size: 18px;
+        font-size: 16px;
         border: none;
         border-radius: 5px;
         &:hover{
-            background-color: $text;
-            color: $primary;
+            background-color: $brown;
+            color: $text;
             transition: .3s;
         }
     }

@@ -28,11 +28,10 @@
         justify-content: space-between;
         align-items: center;
         z-index: 1000;
-        color: #fff7e8;
             a{
-                color: $light;
+                color: $text;
                 &:hover{
-                    color: #ebbe84;
+                    color: #c2893e;
                 }
             }
             ul ul{
@@ -96,16 +95,16 @@
                             content: '';
                             right: -10px;
                             top: -10px;
-                            border-top: 1px solid #ebbe84;
-                            border-right: 1px solid #ebbe84;
+                            border-top: 1px solid #c2893e;
+                            border-right: 1px solid #c2893e;
                             transform: translate(-100%, 50%);
                         }
                         a::after{
                             content: '';
                             left: -10px;
                             bottom: -10px;
-                            border-bottom: 1px solid #ebbe84;
-                            border-left: 1px solid #ebbe84;
+                            border-bottom: 1px solid #c2893e;
+                            border-left: 1px solid #c2893e;
                             transform: translate(100%, -50%);
                             z-index: 1;
                         }
